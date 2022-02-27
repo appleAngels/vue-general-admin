@@ -28,23 +28,13 @@
     <div class="bottom">
       <h1 class="logoArea">
         <router-link to="/home" class="logo">
-          <img src="./images/logo.png" alt="" />
+          <img src="./images/logo.png" alt />
         </router-link>
       </h1>
       <div class="searchArea">
         <form action="###" class="searchForm">
-          <input
-            type="text"
-            id="autocomplete"
-            class="input-error input-xxlarge"
-          />
-          <button
-            class="sui-btn btn-xlarge btn-danger"
-            type="button"
-            @click="goSearch"
-          >
-            搜索
-          </button>
+          <input type="text" id="autocomplete" class="input-error input-xxlarge" v-model="keyword" />
+          <button class="sui-btn btn-xlarge btn-danger" type="button" @click="goSearch">搜索</button>
         </form>
       </div>
     </div>
@@ -54,12 +44,19 @@
 <script>
 export default {
   name: '',
+  data() {
+    return {
+      keyword: ''
+    }
+  },
   methods: {
     goSearch() {
-      this.$router.push('/search');
+      // this.$router.push('/search/' + this.keyword)
+      // this.$router.push(`/search/${this.keyword}`)
+      this.$router.push({ name: 'search', params: { keyword: this.keyword }, query: { k: this.keyword.toUpperCase() } })
     }
   }
-};
+}
 </script>
 
 <style scoped lang="less">
