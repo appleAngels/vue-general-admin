@@ -105,15 +105,12 @@ cnpm install --save vue-router
 第四步:使用
 
 非路由组件的结构的搭建：
-前台项目的结构与样式不需要自己写的，老师准备好了
 辉洪老师静态页面：
-结构 + 样式 +图片资源
+结构 + 样式 + 图片资源
 
 项目采用的 less 样式,浏览器不识别 less 语法，需要一些 loader 进行处理，把 less 语法转换为 CSS 语法
-
 1：安装 less less-loader@5
 切记 less-loader 安装 5 版本的，不要安装在最新版本，安装最新版本 less-loader 会报错，报的错误 setOption 函数未定义
-
 2:需要在 style 标签的身上加上 lang="less",不添加样式不生效
 
 7)路由的跳转

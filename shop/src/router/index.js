@@ -1,11 +1,11 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import Home from '@/pages/Home';
-import Login from '@/pages/Login';
-import Register from '@/pages/Register';
-import Search from '@/pages/Search';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Home from '@/pages/Home'
+import Login from '@/pages/Login'
+import Register from '@/pages/Register'
+import Search from '@/pages/Search'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 export default new VueRouter({
   routes: [
@@ -43,4 +43,4 @@ export default new VueRouter({
       redirect: '/home'
     }
   ]
-});
+})
