@@ -1,13 +1,12 @@
 <template>
-  <div class="hello">
-    <!-- <h1>{{ msg }}</h1> -->
-    <h1>Home</h1>
+  <div class="footer">
+    <el-card>admin</el-card>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Footer',
   props: {
     msg: String
   }
@@ -15,9 +14,8 @@ export default {
 </script>
 
 <style scoped lang="less">
-.hello {
-  h1 {
-    color: red;
-  }
+.footer {
+  width: 100%;
+  text-align: center;
 }
 </style>
