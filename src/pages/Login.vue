@@ -4,7 +4,7 @@
       <div slot="header" class="clearfix">
         <span class="title">system</span>
       </div>
-      <el-form label-width="80px" :model="form" ref="loginForm">
+      <el-form label-width="80px" :model="form" ref="loginForm" @keyup.enter.native="login('loginForm')">
         <el-form-item label="username" prop="username" :rules="rules.username">
           <el-input v-model="form.username"></el-input>
         </el-form-item>

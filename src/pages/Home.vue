@@ -4,8 +4,10 @@
     <el-container class="content">
       <Menu />
       <el-container>
-
-        <el-main>Main</el-main>
+        <el-main>
+          <Breadcrumb />
+          <router-view />
+        </el-main>
         <el-footer>
           <Footer />
         </el-footer>
@@ -18,6 +20,7 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Menu from '@/components/Menu'
+import Breadcrumb from '@/components/Breadcrumb'
 export default {
   name: 'Home',
   props: {
@@ -26,7 +29,10 @@ export default {
   components: {
     Header,
     Footer,
+    Breadcrumb,
     Menu
+  },
+  created(){
   }
 }
 </script>

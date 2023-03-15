@@ -28,9 +28,10 @@ export default {
 
 <style scoped lang="less">
 .header {
-  background-color: antiquewhite;
+  // background-color: beige;
   width: 100%;
   color: red;
+  border-bottom: 1px solid #eee;
 
   .el-header {
     display: flex;
